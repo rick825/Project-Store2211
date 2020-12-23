@@ -78,7 +78,7 @@
 
    .navbackblack{
       width: 1360px;
-      height: 1000px;
+      height: 100%;
       opacity: 0.9;
       position: fixed;
       top: 0;
@@ -206,7 +206,7 @@
 /* block 1 */
 .block1{
   width: 80rem;
-  height: 340px;
+  min-height: 340px;
   margin-left: 35px;
   box-shadow: 2px 5px 5px black;
 }
@@ -349,6 +349,25 @@
   body{
     width: 1360px;
   }
+
+  /* nav bar */
+   .navbar{
+    height: 200px;
+   }
+
+  .navbar-brand img{
+    width: 20rem;
+  }
+  .navtog{
+   margin-right: 2rem;
+   margin-bottom: 2rem;
+  }
+
+  .navtogmain{
+    width: 4em;
+    height: 4em;
+  }
+  /* end nav bar */
     .c-img:after{
       opacity: 0.6;
       height: 1000px;
@@ -356,8 +375,8 @@
     .head{
          /* width: 1000px; */
          left: 14%;
+       
     }
-
 
     .c-img img{
       width: 1360px;
@@ -380,40 +399,122 @@
     .navblackactive{
        transform: translateY(0%);
     }
+
+    .card{
+      width: 30rem;
+      height: 30rem;
+    }
+
+     .card img{
+      height: 20rem;
+     }
       
 
       .order{
         width: 100%;
       }
+       
+       #wwp{
+         font-size: 8rem;
+       }
 
       .feed{
-        width: 60%;
-        margin-left: 19rem;
+        width: 80%;
+        margin-left: 6rem;
       }
 
     .contprev,.contnext{
-      top: 76%;
-      margin-left: 150px;
+      top: 63%;
+      margin-left: 15px;
     }
 
     .iconnext{
-      margin-left: 25rem;
+      margin-left: 40rem;
+    }
+
+    .iconprev,.iconnext{
+      padding: 70px 40px;
     }
 
 
+/* block 1 */
+
     .block1{
     width: 80rem;
-    height: 360px;
+    min-height: 400px;
+   }
+
+   .block1 h1{
+    font-size: 8rem;
    }
 
    .para{
     /* width: 56rem; */
     margin-left: 3rem;
+    line-height: 5rem;
    }
 
+   .para p{
+    font-size: 4rem;
+   }
+
+   .lmore{
+    font-size: 5rem;
+   }
+/* end block 1 */
    .rec{
     width: 320px;
    }
+
+   /* contact */
+   .display-4{
+    font-size: 8.65rem; 
+   }
+
+   .contact p{
+    font-size: 3rem
+   }
+
+   .cntbtn{
+   padding: 2.5rem 0rem;
+    font-size: 5rem;
+    padding-left: 10rem;
+    padding-right: 40rem;
+   }
+
+   /* form */
+   .fohead h1{
+     font-size: 9rem;
+   }
+
+   .form-group label{
+    font-size: 4rem;
+   }
+
+   .form-group input,.form-group textarea{
+    font-size: 3rem;
+   }
+
+   .form-group small{
+    font-size: 2rem;
+   }
+
+   .form-check label{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+   }
+
+
+ input.incheck{
+    width: 30px;
+    height: 20px
+   }
+
+   .subbtn{
+    width: 50rem;
+   }
+   /* end form */
+   /* end contact */
 
    .footer{
     height: 400px;
@@ -536,6 +637,7 @@
   /* margin-left: 6rem; */
   margin-bottom: 20px;
  }
+
   .feed{
     margin-left: 10px;
     /* margin-right: 80px; */
@@ -602,7 +704,7 @@
       		<a href="" class="navbar-brand mt-2" title=""><img src="image/logo.png" alt=""></a>
 
       		<button class="navbar-toggler navtog"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"  onclick=""></span>
+            <span class="navbar-toggler-icon navtogmain"  onclick=""></span>
           </button>
     
     <div class="navbackblack"></div>
@@ -911,7 +1013,7 @@
   <button class="btn bg-warning cntbtn">Contact now</button>
   </article>
 </div>  
-<div class="container-fluid">
+<div class="container-fluid fohead">
     <h1 class="text-center pt-3">Contact us</h1>
     <hr class="w-25 mx-auto pb-3">
   </div>
@@ -928,10 +1030,10 @@
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Your Query..."></textarea>
   </div>
   <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <input type="checkbox" class="form-check-input incheck" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
-  <button type="submit" class="btn btn-primary text-light">Submit</button>
+  <button type="submit" class="btn btn-primary text-light subbtn">Submit</button>
 </form>
 </div>
 </div>
