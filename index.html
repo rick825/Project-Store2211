@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<style>
+
+    body{
+      overflow-x: hidden;
+    }
+    
+
+		*{
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+      font-family: 'Josefin Sans', sans-serif;
+		}
+
+    /* nav bar */
+
+   .navbar{
+      height: 130px;
+    }
+
+    .navbar-dark .navbar-nav .nav-link{
+      color: #BEBEBE;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover{
+      color: white;
+    }
+
+    .navbar-brand img{
+      width: 14rem;
+    }
+
+   .dropdown-menu{
+    background:   #181818;
+    border: none;
+   }
+
+   .dropdown-menu a{
+    color: #656565;
+    border-radius:2px;
+   }
+
+   .nav-link{
+    color: #656565;
+    margin-right: 40px;
+      font-size: 1.25rem;
+   }
+
+
+   .btn{
+   color:  #20c997;
+   width: 10rem;
+   }
+
+  .mybg-dark{
+    /* background-color: ; */
+  }
+
+  .mybg-dark:before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black; 
+    opacity: 0.8;
+    z-index: -1;
+  }
+
+   .navbackblack{
+      width: 1360px;
+      height: 650px;
+      opacity: 0.9;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: black;
+      z-index: -1;
+      transition: .5s ease;
+      transform: translateY(150%);
+    }
+
+   
+   
+    
+ /* end nav bar */
+
+ /* main section */
+
+ .c-img img{
+  width: 100%;
+  height: 625px;
+ }
+ .c-img:after{
+  content: " ";
+  width: 1360px;
+  height: 625px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black; 
+    opacity: 0.6;
+    z-index: 1;
+ }
+
+
+   .carousel-indicators{
+    cursor: pointer;
+   }
+
+ .head{
+  width: 1000px;
+  text-transform: uppercase;
+     position: absolute;
+     z-index: 2;
+     top: 30%;
+     left: 14%;
+     color: #E0E0E0;
+     line-height: 50px;
+ }
+  .hd1{
+    font-size: 2rem;
+  }
+
+ .hd2{
+  font-size: 5.5rem;
+  line-height: 5rem;
+ }
+
+ .hd1,.hd2{
+  text-shadow: 2px 4px black,2px 4px black,2px 8px black;
+ }
+
+ .carbtn{
+  margin-top: 50px;
+ }
+
+ .carbtnin{
+  box-shadow: 2px 5px 5px black,2px 10px 10px black,2px 20px 20px black;
+ }
+
+  .ctext{
+  position: absolute;
+  left: 40%;
+ }
+
+ .nxpr{
+  z-index: 2;
+ }
+ 
+
+ /* order section */
+  /* feed-carousel Section */
+    .card{
+  width: 15rem;
+ }
+
+
+ .card img{
+  width: 100%;
+  height: 180px;
+ }
+
+ .card a:hover{
+  text-decoration: none;
+ }
+
+.feed{
+  width: 85%;
+  padding: 0;
+   margin-left: 75px;
+   overflow-x: hidden;
+ }
+
+ .card{
+  margin-bottom: 10px;
+  box-shadow: 2px 5px 5px black;
+ }
+
+ .contprev,.contnext{
+   top: 160%;
+ }
+
+
+ .iconprev,.iconnext{
+  box-shadow: 2px 5px 5px black,2px 8px 8px black,2px 10px 10px black;
+  border-radius: 10px;
+  padding: 50px 20px;
+  margin-bottom: 10rem;
+   }
+
+ 
+/* end feed carousel section */
+/* end order section */
+/* block 1 */
+.block1{
+  width: 80rem;
+  height: 340px;
+  margin-left: 35px;
+  box-shadow: 2px 5px 5px black;
+}
+     /* about section */
+
+     .drop-cl{
+      font-size: 6rem;
+      float: left;
+  width: 0.6em;
+  font-family: algerian, courier;
+  line-height: 80%;
+     }
+
+   
+ .para{
+  width: 65rem;
+  line-height: 40px;
+  margin-left: 9rem;
+ }
+
+ .para p{
+  font-size: 1.2rem;
+ }
+
+  .lmore{
+
+  }
+     /* end about section */
+     /* end block 1 */
+  /* record section */
+  .records{
+    width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+  }
+
+  .rec{
+    width: 360px;
+    height: 400px;
+    box-shadow: 2px 5px 5px black;
+    padding: 12px;
+  }
+
+  .rec p{
+    text-transform: uppercase;
+    text-align: center;
+    color: #606060;
+    
+  }
+
+   .r1 p{
+    font-size: 4rem;
+    padding-top: 66px;
+    line-height: 62px; 
+  }
+
+  .r2 p{
+    font-size: 3.4rem;
+    font-weight: 600;
+     padding-top: 55px;
+     line-height: 55px;
+  }
+
+  .r3 p{
+    font-size: 3.2rem;
+    font-weight: 600;
+     padding-top: 60px;
+     line-height: 52px;
+  }
+
+  .rec-drop{
+    font-size: 6.5rem;
+    color: #484848;
+  }
+
+  .drop1{
+    font-size: 7.5rem;
+  }
+  /* end record section */
+  /* contact section */
+  .cntbtn{
+    color: black;
+    font-weight: 600;
+  }
+  /* end contact section */
+ 
+ /* end main section */
+
+ /* footer section */
+ .footer{
+  background: #101010;
+  width: 1360px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+ }
+
+ .footlogo img{
+  width: 250px;
+ }
+
+ .footc{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ }
+
+ .footsec{
+   display: flex;
+   flex-direction: column;
+   margin-left: 60px;
+ }
+
+ .footsec h1{
+  color: #DCDCDC;
+  font-size: 1.7rem;
+ }
+  
+  .copy{
+    width: 300px;
+    position: relative;
+  }
+
+  .copy p{
+    position: absolute;
+    left: -160%;
+    bottom: -130px;
+  }
+
+
+
+
+ /* end footer section */
+
+
+
+ /* media query */
+ @media only screen and (max-width: 1000px) {
+    .c-img:after{
+      opacity: 0.6;
+    }
+    .head{
+         width: 500px;
+         left: 22%;
+    }
+
+    .ctext{
+       left: 33%;
+    }
+
+    .hd2{
+      font-size: 3.5rem;
+    }
+     
+     .navtog{}
+    .navbar-collapse{
+    }
+   
+
+    .navblackactive{
+       transform: translateY(0%);
+    }
+
+    .block1{
+    width: 56rem;
+    height: 360px;
+   }
+   .para{
+    width: 50rem;
+    margin-left: 3rem;
+   }
+
+   .rec{
+    width: 320px;
+   }
+
+   .footer{
+    height: 400px;
+   }
+
+   .footsec{
+     margin-left: 40px;
+   }
+     
+     .footsec h1{
+      font-size: 1.6rem;
+     }
+
+    .copy p{
+      bottom: -180px;
+      left: -200%;
+    }
+
+  }
+
+    /* media queries */
+   @media  only screen and (max-width: 846px) {
+    .iconprev, .iconnext{
+      /* position: fixed; */
+    }
+    .feed{
+    margin-left: 140px;
+   
+    display: flex;
+    justify-content: center;
+  }
+
+  .prosub{
+    font-size: 1rem;
+   }
+   .prosub span{
+    font-size:1.4rem;
+   }
+
+
+  }
+
+  @media only screen and (min-width: 530px) and (max-width: 730px){
+        .navblackactive{
+       transform: translateY(0%);
+    }
+
+    .head{
+      left: 12%;
+    }
+
+    .card{
+      width: 12.5rem;
+  /* margin-left: 6rem; */
+  margin-bottom: 20px;
+ }
+  .feed{
+    margin-left: 50px;
+    /* margin-right: 80px; */
+   display: flex;
+    justify-content: center;
+  }
+
+  .contprev,.contnext{
+   top: 177%;
+   margin-left: 30px;
+ }
+ .block1{
+    width: 38rem;
+    height: 460px;
+   }
+   .para{
+    width: 35rem;
+    margin-left: 2rem;
+   }
+    .records{
+    flex-direction: column;
+    }
+
+   .rec{
+    width: 400px;
+    margin-left: 9rem;
+    margin-top: 10px;
+   }
+
+   .footer{
+    height: 550px;
+   }
+
+   .footc{
+      flex-direction: column;
+      margin-left: 50px;
+    }
+
+    .footsec{
+      margin-top: 20px;
+    }
+
+    .copy p{
+      bottom: -280px;
+      left: -100%;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 530px){
+     .head{
+         width: 500px;
+         left: 0;
+          top: 35%;
+    }
+
+     .hd2{
+      font-size: 2rem;
+      line-height: 3rem;       
+    }
+     .navblackactive{
+       transform: translateY(0%);
+    }
+
+    .card{
+      width: 10.5rem;
+  /* margin-left: 6rem; */
+  margin-bottom: 20px;
+ }
+  .feed{
+    margin-left: 10px;
+    /* margin-right: 80px; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .contprev,.contnext{
+   top: 180%;
+ }
+
+ .contnext{
+  right: 0px;
+ }
+
+  .block1{
+    width: 29rem;
+    height: 560px;
+    margin-left: 10px;
+   }
+   .para{
+    width: 22rem;
+    margin-left: 3rem;
+   }
+
+    .records{
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .rec{
+      width: 400px;
+      margin-left: 2.3rem;
+      margin-top: 10px;
+    }
+    
+    .footer{
+      height: 600px;
+    }
+
+    .footc{
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    .footsec{
+      margin-top: 20px;
+    }
+
+    .copy p{
+      bottom: -280px;
+      left: -130%;
+    }
+
+  }
+ /* end media query */
+
+	</style>
+</head>
+<body>
+<!-- nav section -->
+      <section id="navmain">
+      	<nav class="navbar fixed-top navbar-expand-lg navbar-dark mybg-dark">
+      		<a href="" class="navbar-brand mt-2" title=""><img src="image/logo.png" alt=""></a>
+
+      		<button class="navbar-toggler navtog"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"  onclick=""></span>
+          </button>
+    
+    <div class="navbackblack"></div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    	<ul class="navbar-nav ml-auto mt-4">
+    		<li class="nav-item">
+    			<a class="nav-link" href="">Home<span class="sr-only">(current)</span></a>
+    		</li>
+        <li class="nav-item">
+        <a class="nav-link nac" href="#order">What We Provide</a>
+            </li>
+
+    		<li class="nav-item">
+        <a class="nav-link nac" href="#block1">About</a>
+            </li>
+
+        <li class="nav-item dropdown">
+        	<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        		More
+        	</a>
+        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        		<a href="#" class="dropdown-item " title="">Gallery</a>
+        		<a href="#" class="dropdown-item " title="">Contact us</a>
+        	</div>
+        </li>
+    	</ul>
+            
+            <form class="form-inline my-2 my-lg-0 ">
+      <button class="btn btn-outline-success mt-4  mybtn" type="submit">Order From Home</button>
+      <h3 class="text-light mt-4 mx-3">Or,</h3>
+      <button class="btn btn-outline-success mt-4  mr-5 mybtn" type="submit">Visit Us</button>
+    </form>
+         </div>
+      	</nav>
+      </section>
+ <!-- end nav section -->
+
+  <!-- main section -->
+  <section id="main">
+   <div class="main cont">
+    <!-- carousal division -->
+     <div id="carouselExampleIndicators-one" class="carousel slide cmain" data-ride="carousel">
+      <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators-one" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators-one" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators-one" data-slide-to="2"></li>
+     <li data-target="#carouselExampleIndicators-one" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators-one" data-slide-to="4"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="head">
+      <h3 class="text-center hd1">-Company Name-</h3>
+      <h1 class="text-center hd2">Best Grocery Store in your locality!!</h1>
+      <form class="form-inline carbtn">
+         <button class="btn btn-outline-success mt-4 ctext mr-5 carbtnin" type="submit">Order From Us</button>
+      </form>
+    </div>
+
+    <div class="carousel-item c-img active">
+      <img class="d-block " src="image/g1.jpeg" alt="First slide">
+    </div>
+    <div class="carousel-item c-img">
+      <img class="d-block " src="image/g2.jpeg" alt="Second slide">
+    </div>
+    <div class="carousel-item c-img">
+      <img class="d-block " src="image/g3.jpeg" alt="Third slide">
+    </div>
+    <div class="carousel-item c-img">
+      <img class="d-block " src="image/g4.jpeg" alt="Fourth slide">
+    </div>
+    <div class="carousel-item c-img">
+      <img class="d-block " src="image/g5.jpeg" alt="Five slide">
+    </div>
+  </div>
+  
+     </div>
+     <!-- end carousel division -->
+     
+      <!-- order from us -->
+        <div class="order" id="order">
+             <div class="container-fluid">
+    <h1 class="text-center pt-5"  id="wwp" >What We Provide..</h1>
+    <hr class="w-25 mx-auto pb-1">
+  </div>
+       <!-- feed-carousel section -->
+   <section id="feed" class="mt-5"> 
+    <div id="carouselExampleIndicators-two" class="main-img mb-5  carousel slide feed" data-ride="carousel">
+       <!-- row 1 -->
+    <div class="carousel-item  sml fitem1 active">
+      <div class="row ml-5  ">
+        <!-- r1col 1 -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="card" >
+                <img src="veg/vegmain.jpg" alt="">
+                <a href=""><h4 class="card-subtitle mt-2 mb-2 text-center text-muted prosub prosub">-<span class="text-dark display-2">V</span>egetables-</h4></a>
+            </div>
+            </div>
+            <!-- r1col 2 -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="card" >
+                <img src="fru/frumain.jpg" alt="">
+                <a href=""><h4 class="card-subtitle mt-2 mb-2 text-center text-muted prosub">-<span class="text-dark display-2">F</span>ruits-</h4></a>
+            </div>
+            </div>
+           <!-- r1col 3 -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="card" >
+                <img src="sweet/sweetmain.jpg" alt="">
+                <a href=""><h4 class="card-subtitle mt-2 mb-2 text-center text-muted prosub">-<span class="text-dark display-2">S</span>Weets-</h4></a>
+            </div>
+            </div>
+               <!-- r1col 4 -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="card" >
+                <img src="snacks/snkmain.jpg" alt="">
+                <a href=""><h4 class="card-subtitle mt-2 mb-2 text-center text-muted prosub">-<span class="text-dark display-2">S</span>nacks-</h4></a>
+            </div>          
+            </div>
+          </div>  
+    </div>
+         
+         <!-- row 2 -->
+    <div class="carousel-item sml fitem2">
+       <div class="row ml-5  ">
+           <!-- r2col 1 -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="card" >
+                <img src="veg/vegmain.jpg" alt="">
+                <a href=""><h4 class="card-subtitle mt-2 mb-2 text-center text-muted prosub">-<span class="text-dark display-2">V</span>egetables-</h4></a>
+            </div>
+            </div>
+               <!-- r2col 2 -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="card" >
+                <img src="fru/frumain.jpg" alt="">
+                <a href=""><h4 class="card-subtitle mt-2 mb-2 text-center text-muted prosub">-<span class="text-dark display-2">F</span>ruits-</h4></a>
+            </div>
+            </div>
+                <!-- r2col 3 -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="card" >
+                <img src="sweet/sweetmain.jpg" alt="">
+                <a href=""><h4 class="card-subtitle mt-2 mb-2 text-center text-muted prosub">-<span class="text-dark display-2">S</span>Weets-</h4></a>
+            </div>
+            </div>
+                <!-- r2col 4 -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="card" >
+                <img src="snacks/snkmain.jpg" alt="">
+                <a href=""><h4 class="card-subtitle mt-2 mb-2 text-center text-muted prosub">-<span class="text-dark display-2">S</span>nacks-</h4></a>
+            </div>           
+            </div>
+          </div>  
+    </div>
+        <!-- row 3 -->
+    <div class="carousel-item sml fitem3">
+       <div class="row ml-5  ">
+         <!-- r3col1 -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="card" >
+                <img src="veg/vegmain.jpg" alt="">
+                <a href=""><h4 class="card-subtitle mt-2 mb-2 text-center text-muted prosub">-<span class="text-dark display-2">V</span>egetables-</h4></a>
+            </div>
+            </div>
+                  <!-- r3col2 -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="card" >
+                <img src="fru/frumain.jpg" alt="">
+                <a href=""><h4 class="card-subtitle mt-2 mb-2 text-center text-muted prosub">-<span class="text-dark display-2">F</span>ruits-</h4></a>
+            </div>
+            </div>
+                  <!-- r3col3 -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="card" >
+                <img src="sweet/sweetmain.jpg" alt="">
+                <a href=""><h4 class="card-subtitle mt-2 mb-2 text-center text-muted prosub">-<span class="text-dark display-2">S</span>Weets-</h4></a>
+            </div>
+            </div>
+                  <!-- r3col4 -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="card" >
+                <img src="snacks/snkmain.jpg" alt="">
+                <a href=""><h4 class="card-subtitle mt-2 mb-2 text-center text-muted prosub">-<span class="text-dark display-2">S</span>nacks-</h4></a>
+            </div>           
+            </div>
+          </div>  
+    </div>
+             <!-- row 4 -->
+    <div class="carousel-item sml fitem4">
+       <div class="row ml-5  ">
+        <!-- r4col 1 -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="card" >
+                <img src="veg/vegmain.jpg" alt="">
+                <a href=""><h4 class="card-subtitle mt-2 mb-2 text-center text-muted prosub">-<span class="text-dark display-2">V</span>egetables-</h4></a>
+            </div>
+            </div>
+             <!-- r4col 2 -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="card" >
+                <img src="fru/frumain.jpg" alt="">
+                <a href=""><h4 class="card-subtitle mt-2 mb-2 text-center text-muted prosub">-<span class="text-dark display-2">F</span>ruits-</h4></a>
+            </div>
+            </div>
+                <!-- r4col 3 -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="card" >
+                <img src="sweet/sweetmain.jpg" alt="">
+                <a href=""><h4 class="card-subtitle mt-2 mb-2 text-center text-muted prosub">-<span class="text-dark display-2">S</span>Weets-</h4></a>
+            </div>
+            </div>
+            <!-- r4col 4 -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="card" >
+                <img src="snacks/snkmain.jpg" alt="">
+                <a href=""><h4 class="card-subtitle mt-2 mb-2 text-center text-muted prosub">-<span class="text-dark display-2">S</span>nacks-</h4></a>
+            </div>           
+            </div>
+          </div>  
+    </div>
+     <!-- row 5 -->
+    <div class="carousel-item sml fitem5">
+       <div class="row ml-5  ">
+        <!-- r5col 1 -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="card" >
+                <img src="veg/vegmain.jpg" alt="">
+                <a href=""><h4 class="card-subtitle mt-2 mb-2 text-center text-muted prosub">-<span class="text-dark display-2">V</span>egetables-</h4></a>
+            </div>
+            </div>
+                <!-- r5col 2 -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="card" >
+                <img src="fru/frumain.jpg" alt="">
+                <a href=""><h4 class="card-subtitle mt-2 mb-2 text-center text-muted prosub">-<span class="text-dark display-2">F</span>ruits-</h4></a>
+            </div>
+            </div>
+                 <!-- r5col 3 -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="card" >
+                <img src="sweet/sweetmain.jpg" alt="">
+                <a href=""><h4 class="card-subtitle mt-2 mb-2 text-center text-muted prosub">-<span class="text-dark display-2">S</span>Weets-</h4></a>
+            </div>
+            </div>
+                <!-- r5col 4 -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="card" >
+                <img src="snacks/snkmain.jpg" alt="">
+                <a href=""><h4 class="card-subtitle mt-2 mb-2 text-center text-muted prosub">-<span class="text-dark display-2">S</span>nacks-</h4></a>
+            </div>
+            </div>
+          </div>  
+    </div>
+
+  </div>
+
+  <a class="carousel-control-prev contprev nxpr" href="#carouselExampleIndicators-two" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon iconprev bg-dark" ></span>
+    <span class="sr-only ">Previous</span>
+  </a>
+  <a class="carousel-control-next contnext nxpr" href="#carouselExampleIndicators-two" role="button" data-slide="next">
+    <span class="carousel-control-next-icon iconnext bg-dark " aria-hidden="true"></span>
+    <span class="sr-only ">Next</span>
+  </a>
+     </div>
+     <!-- end carousel division -->
+  </section>
+        </div>
+    <!--end order from us -->
+    <!-- about/block1 us -->
+    <div class="block1" id="block1">
+
+    <div class="container-fluid">
+    <h1 class="text-center pt-5" >About Us</h1>
+    <hr class="w-25 mx-auto pd-1">
+  </div>
+
+      <div class="para">
+     <p><span class="drop-cl">T</span>his is text yours. This is a paragraph. You can write your own content here, and fill in the blanks. What's your story and where do you go from here? Tell the world about your business, and make this text yours.
+     GET MOVING  WITH TRANSPO SIMPLE, QUICK & EASY PROCESS Book Online Ahead of Time Get Started.
+</p> 
+     <a href=""><h4 class="lmore text-center pb-5">Learn More</h4></a>
+   </div>
+
+   </div>
+   <!-- end about/block1 us -->
+   <!-- records  -->
+   <div class="records mt-5 mb-5 mx-auto" id="records">
+     <div class="rec r1">
+      <p> <span class="rec-drop drop1">1</span>000+ Orders per day</p>
+     </div>
+     <div class="rec r2">
+       <p> <span class="rec-drop drop2">D</span>aily  Offers on Products!</p>
+     </div>
+     <div class="rec r3">
+       <p> <span class="rec-drop drop3">S</span>pecial Discounts on Online Orders!</p>
+     </div>
+   </div>
+   <!-- end records -->
+   <!-- contact -->
+   <div class="contact">
+   <div class="bg-primary text-light mb-4">
+  <article class="py-5 text-center">
+  <h3 class="display-4">+91 9693195907</h3>
+  <p>If you want best service call us now.</p>
+  <button class="btn bg-warning cntbtn">Contact now</button>
+  </article>
+</div>  
+<div class="container-fluid">
+    <h1 class="text-center pt-3">Contact us</h1>
+    <hr class="w-25 mx-auto pb-3">
+  </div>
+
+<div class="w-50 mx-auto mb-4">
+  <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Enter Your Query..</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Your Query..."></textarea>
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary text-light">Submit</button>
+</form>
+</div>
+</div>
+   <!-- end contact -->
+   </div>
+  </section>
+  <!-- end main section -->
+
+  <!-- footer section -->
+  <section id="footer">
+    <div class="footer">
+      <div class="footlogo">
+        <img src="image/logo.png" alt="">
+      </div>
+      <div class="footc">
+        <div class="footsec fs1">
+          <h1>Follow Us</h1>
+          <a href="">Facebook</a>
+          <a href="">Instagram</a>
+        </div>
+        <div class="footsec fs2">
+             <h1>Link 2 head</h1>
+             <a href="">Link 2.1</a>
+             <a href="">Link 2.2</a>
+        </div>
+        <div class="footsec fs3">
+           <h1>Link 3 head</h1>
+           <a href="">Link 3.1</a>
+           <a href="">Link 3.2</a>
+        </div>
+         <div class="footsec fs4">
+           <h1>Link 3 head</h1>
+           <a href="">Link 4.1</a>
+           <a href="">Link 4.2</a>
+        </div>
+      </div>
+      <div class="copy">
+        <p>Copyright @2020|Skystack. All Rights Reserved</p>
+      </div>
+    </div>
+  </section>
+  <!-- end footer section -->
+
+<!-- scripts -->
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- javascript -->
+
+<script src="bootstrap.min.js"></script>
+<script >
+  $(document).ready(function(){
+  $('#carouselExampleIndicators-one').carousel();
+  $('#carouselExampleIndicators-two').carousel();
+})
+
+  $(document).ready(function(){
+  $('#carouselExampleIndicators-one').carousel({
+    interval: 2000,
+    keyboard: false,
+    pause: hover
+  });
+})
+
+  $(document).ready(function(){
+  $('#carouselExampleIndicators-two').carousel({
+    interval: 2000,
+    keyboard: false,
+    pause: hover
+  });
+})
+</script>
+
+ <script>
+   const  backblack=()=>{
+    const nav= document.querySelector('.navtog');
+    const col= document.querySelector('.navbackblack');
+
+
+    nav.addEventListener('click',() =>{
+             col.classList.toggle('navblackactive');
+   });
+
+ 
+
+ }
+
+ backblack();
+ 
+ </script>
+<!-- end scripts -->
+	
+</body>
+</html>
