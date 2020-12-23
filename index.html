@@ -78,7 +78,7 @@
 
    .navbackblack{
       width: 1360px;
-      height: 650px;
+      height: 1000px;
       opacity: 0.9;
       position: fixed;
       top: 0;
@@ -86,7 +86,7 @@
       background: black;
       z-index: -1;
       transition: .5s ease;
-      transform: translateY(150%);
+      transform: translateY(1000%);
     }
 
    
@@ -222,9 +222,9 @@
 
    
  .para{
-  width: 65rem;
+  /* width: 65rem; */
   line-height: 40px;
-  margin-left: 9rem;
+  margin: 0rem 3rem;
  }
 
  .para p{
@@ -346,16 +346,26 @@
 
  /* media query */
  @media only screen and (max-width: 1000px) {
+  body{
+    width: 1360px;
+  }
     .c-img:after{
       opacity: 0.6;
+      height: 1000px;
     }
     .head{
-         width: 500px;
-         left: 22%;
+         /* width: 1000px; */
+         left: 14%;
+    }
+
+
+    .c-img img{
+      width: 1360px;
+      height: 1000px;
     }
 
     .ctext{
-       left: 33%;
+       left: 40%;
     }
 
     .hd2{
@@ -365,18 +375,39 @@
      .navtog{}
     .navbar-collapse{
     }
-   
+    
 
     .navblackactive{
        transform: translateY(0%);
     }
+      
+
+      .order{
+        width: 100%;
+      }
+
+      .feed{
+        width: 60%;
+        margin-left: 19rem;
+      }
+
+    .contprev,.contnext{
+      top: 76%;
+      margin-left: 150px;
+    }
+
+    .iconnext{
+      margin-left: 25rem;
+    }
+
 
     .block1{
-    width: 56rem;
+    width: 80rem;
     height: 360px;
    }
+
    .para{
-    width: 50rem;
+    /* width: 56rem; */
     margin-left: 3rem;
    }
 
@@ -447,7 +478,7 @@
   }
 
   .contprev,.contnext{
-   top: 177%;
+   top: 1%;
    margin-left: 30px;
  }
  .block1{
@@ -489,12 +520,8 @@
   }
 
 
-  @media only screen and (max-width: 530px){
-     .head{
-         width: 500px;
-         left: 0;
-          top: 35%;
-    }
+  @media only screen and (max-width: 630px){
+   
 
      .hd2{
       font-size: 2rem;
