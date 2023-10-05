@@ -1,0 +1,193 @@
+
+/* media query */
+@media only screen and (max-width: 1000px) {
+    body{
+      width: 1360px;
+    }
+    
+    /* nav bar */
+     .navbar{
+      height: 200px;
+     }
+    
+    .navbar-brand img{
+      width: 20rem;
+    }
+    .navtog{
+     margin-right: 2rem;
+     margin-bottom: 2rem;
+    }
+    
+    .navtogmain{
+      width: 4em;
+      height: 4em;
+    }
+    /* end nav bar */
+      .c-img:after{
+        opacity: 0.6;
+        height: 1000px;
+      }
+      .head{
+           /* width: 1000px; */
+           left: 14%;
+         
+      }
+    
+      .c-img img{
+        width: 1360px;
+        height: 1000px;
+      }
+    
+      .ctext{
+         left: 40%;
+      }
+    
+      .hd2{
+        font-size: 3.5rem;
+      }
+       
+       .navtog{}
+      .navbar-collapse{
+      }
+      
+    
+      .navblackactive{
+         transform: translateY(0%);
+      }
+    
+      .card{
+        width: 30rem;
+        height: 30rem;
+      }
+    
+       .card img{
+        height: 20rem;
+       }
+        
+    
+        .order{
+          width: 100%;
+        }
+         
+         #wwp{
+           font-size: 8rem;
+         }
+    
+        .feed{
+          width: 80%;
+          margin-left: 6rem;
+        }
+    
+      .contprev,.contnext{
+        top: 63%;
+        margin-left: 15px;
+      }
+    
+      .iconnext{
+        margin-left: 40rem;
+      }
+    
+      .iconprev,.iconnext{
+        padding: 70px 40px;
+      }
+    
+    
+    /* block 1 */
+    
+      .block1{
+      width: 80rem;
+      min-height: 400px;
+     }
+    
+     .block1 h1{
+      font-size: 8rem;
+     }
+    
+     .para{
+      /* width: 56rem; */
+      margin-left: 3rem;
+      line-height: 5rem;
+     }
+    
+     .para p{
+      font-size: 4rem;
+     }
+    
+     .lmore{
+      font-size: 5rem;
+     }
+    /* end block 1 */
+     .rec{
+      width: 320px;
+     }
+    
+     /* contact */
+     .display-4{
+      font-size: 8.65rem; 
+     }
+    
+     .contact p{
+      font-size: 3rem
+     }
+    
+     .cntbtn{
+     padding: 2.5rem 0rem;
+      font-size: 5rem;
+      padding-left: 10rem;
+      padding-right: 40rem;
+     }
+    
+     /* form */
+     .fohead h1{
+       font-size: 9rem;
+     }
+    
+     .form-group label{
+      font-size: 4rem;
+     }
+    
+     .form-group input,.form-group textarea{
+      font-size: 3rem;
+     }
+    
+     .form-group small{
+      font-size: 2rem;
+     }
+    
+     .form-check label{
+      font-size: 1.5rem;
+      padding-left: 1rem;
+     }
+    
+    
+    input.incheck{
+      width: 30px;
+      height: 20px
+     }
+    
+     .subbtn{
+      width: 50rem;
+     }
+     /* end form */
+     /* end contact */
+    
+     .footer{
+      height: 400px;
+     }
+    
+     .footsec{
+       margin-left: 40px;
+     }
+       
+       .footsec h1{
+        font-size: 1.6rem;
+       }
+    
+      .copy p{
+        bottom: -180px;
+        left: -200%;
+      }
+    
+    }
+    
+   

@@ -1,1 +1,343 @@
 
+
+      *{
+          margin: 0;
+          padding: 0;
+          text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+      }
+
+      body{
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
+      
+
+  /* nav bar */
+
+ .navbar{
+    height: 130px;
+  }
+
+  .navbar-dark .navbar-nav .nav-link{
+    color: #BEBEBE;
+  }
+
+  .navbar-dark .navbar-nav .nav-link:hover{
+    color: white;
+  }
+
+  .navbar-brand img{
+    width: 14rem;
+  }
+
+ .dropdown-menu{
+  background:   #181818;
+  border: none;
+ }
+
+ .dropdown-menu a{
+  color: #656565;
+  border-radius:2px;
+ }
+
+ .nav-link{
+  color: #656565;
+  margin-right: 40px;
+    font-size: 1.25rem;
+ }
+
+
+ .btn{
+ color:  #20c997;
+ width: 10rem;
+ }
+
+.mybg-dark{
+  /* background-color: ; */
+}
+
+.mybg-dark:before{
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black; 
+  opacity: 0.8;
+  z-index: -1;
+}
+
+ .navbackblack{
+    width: 1360px;
+    height: 100%;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    z-index: -1;
+    transition: .5s ease;
+    transform: translateY(1000%);
+  }
+
+ 
+ 
+  
+/* end nav bar */
+
+/* main section */
+
+.c-img img{
+width: 100%;
+height: 625px;
+}
+.c-img:after{
+content: " ";
+width: 1520px;
+height: 625px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black; 
+  opacity: 0.6;
+  z-index: 1;
+}
+
+
+ .carousel-indicators{
+  cursor: pointer;
+  left: 1%;
+ }
+
+.head{
+width: 1000px;
+text-transform: uppercase;
+   position: absolute;
+   z-index: 2;
+   top: 30%;
+   left: 19%;
+   color: #E0E0E0;
+   line-height: 50px;
+}
+.hd1{
+  font-size: 2rem;
+}
+
+.hd2{
+font-size: 5.5rem;
+line-height: 5rem;
+}
+
+.hd1,.hd2{
+text-shadow: 2px 4px black,2px 4px black,2px 8px black;
+}
+
+.carbtn{
+margin-top: 50px;
+}
+
+.carbtnin{
+box-shadow: 2px 5px 5px black,2px 10px 10px black,2px 20px 20px black;
+}
+
+.ctext{
+position: absolute;
+left: 40%;
+}
+
+.nxpr{
+z-index: 2;
+margin-top: -30rem;
+margin-right: 3.6rem;
+}
+
+
+
+
+/* order section */
+/* feed-carousel Section */
+  .card{
+width: 15rem;
+}
+
+
+.card img{
+width: 100%;
+height: 180px;
+}
+
+.card a:hover{
+text-decoration: none;
+}
+
+.feed{
+width: 85%;
+padding: 0;
+ margin-left: 75px;
+ overflow-x: hidden;
+}
+
+.card{
+margin-bottom: 10px;
+box-shadow: 2px 5px 5px black;
+}
+
+.contprev,.contnext{
+ top: 160%;
+}
+
+
+.iconprev,.iconnext{
+box-shadow: 2px 5px 5px black,2px 8px 8px black,2px 10px 10px black;
+border-radius: 10px;
+padding: 50px 20px;
+margin-bottom: 10rem;
+ }
+
+
+/* end feed carousel section */
+/* end order section */
+/* block 1 */
+.block1{
+width: 90rem;
+min-height: 340px;
+margin-left: 35px;
+box-shadow: 2px 5px 5px black;
+}
+   /* about section */
+
+   .drop-cl{
+    font-size: 6rem;
+    float: left;
+width: 0.6em;
+font-family: algerian, courier;
+line-height: 80%;
+   }
+
+ 
+.para{
+/* width: 65rem; */
+line-height: 40px;
+margin: 0rem 3rem;
+}
+
+.para p{
+font-size: 1.2rem;
+}
+
+.lmore{
+
+}
+   /* end about section */
+   /* end block 1 */
+/* record section */
+.records{
+  width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+}
+
+.rec{
+  width: 360px;
+  height: 400px;
+  box-shadow: 2px 5px 5px black;
+  padding: 12px;
+}
+
+.rec p{
+  text-transform: uppercase;
+  text-align: center;
+  color: #606060;
+  
+}
+
+ .r1 p{
+  font-size: 4rem;
+  padding-top: 66px;
+  line-height: 62px; 
+}
+
+.r2 p{
+  font-size: 3.4rem;
+  font-weight: 600;
+   padding-top: 55px;
+   line-height: 55px;
+}
+
+.r3 p{
+  font-size: 3.2rem;
+  font-weight: 600;
+   padding-top: 60px;
+   line-height: 52px;
+}
+
+.rec-drop{
+  font-size: 6.5rem;
+  color: #484848;
+}
+
+.drop1{
+  font-size: 7.5rem;
+}
+/* end record section */
+/* contact section */
+.cntbtn{
+  color: black;
+  font-weight: 600;
+}
+/* end contact section */
+
+/* end main section */
+
+/* footer section */
+.footer{
+background: #101010;
+width: 1540px;
+height: 280px;
+display: flex;
+align-items: center;
+}
+
+.footlogo img{
+width: 250px;
+}
+
+.footc{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.footsec{
+ display: flex;
+ flex-direction: column;
+ margin-left: 60px;
+}
+
+.footsec h1{
+color: #DCDCDC;
+font-size: 1.7rem;
+}
+
+.copy{
+  width: 300px;
+  position: relative;
+}
+
+.copy p{
+  position: absolute;
+  left: -160%;
+  bottom: -130px;
+}
+
+
+
+
+/* end footer section */
+
+
